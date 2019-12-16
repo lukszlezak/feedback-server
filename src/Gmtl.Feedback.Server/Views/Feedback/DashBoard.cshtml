@@ -1,0 +1,30 @@
+﻿@model DashBoardViewModel
+
+@{
+    ViewData["Title"] = "Feedbacks list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Newest feedbacks list</h1>
+
+<table class="table table-hover mt-5">
+    <thead>
+        <tr>
+            <th class="h5 font-weight-bold">Message</th>
+            <th class="h5 font-weight-bold">Signature</th>
+            <th class="h5 font-weight-bold">Domain name</th>
+            <th class="h5 font-weight-bold">Create Date</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var feedback in Model.Feedbacks)
+        {
+            <tr>
+                <td>@feedback.Message</td>
+                <td>@feedback.Signature</td>
+                <td>@feedback.Domain.Name</td>
+                <td>@feedback.CreateDate.ToString("dd-MM-yyyy")</td>
+            </tr>
+        }
+    }
+</table>

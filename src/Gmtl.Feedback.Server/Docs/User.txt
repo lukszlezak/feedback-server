@@ -1,0 +1,4 @@
+﻿
+Guid		- D9FE7C12-E5F0-40DF-91DC-9CDA562F04F3
+Login		- user@user.com
+Password	- password123

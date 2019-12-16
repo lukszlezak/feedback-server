@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "ceb211e4-3690-43f0-9a05-935d675c64ef",
+		"name": "Feedback",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Feedback submit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Feedback/Submit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Feedback",
+						"Submit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

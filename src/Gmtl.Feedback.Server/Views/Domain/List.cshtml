@@ -1,0 +1,35 @@
+﻿@model DomainListViewModel
+
+@{
+    ViewData["Title"] = "Domain list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Domains page of my project</h1>
+
+<div class="mt-5">
+    <a class="btn btn-dark" asp-action="Add">Add new domain</a>
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th class="h5 font-weight-bold">Domain Name</th>
+            <th class="h5 font-weight-bold">Description</th>
+            <th class="h5 font-weight-bold">Create date</th>
+            <th></th><th></th>
+        </tr>
+    </thead>
+    @{
+        foreach (var domain in Model.Domains)
+        {
+            <tr>
+                <td>@domain.Name</td>
+                <td>@domain.Description</td>
+                <td>@domain.CreateDate.ToString("dd-MM-yyyy")</td>
+                <td><a asp-action="Edit" asp-route-domainId="@domain.Id">Edit this domain</a></td>
+                <td><a asp-controller="Feedback" asp-action="List" asp-route-domainId="@domain.Id" asp-route-domainName="@domain.Name">Show Feedbacks</a></td>
+            </tr>
+        }
+    }
+</table>

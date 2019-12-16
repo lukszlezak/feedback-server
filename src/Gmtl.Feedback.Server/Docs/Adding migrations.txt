@@ -1,0 +1,6 @@
+﻿Adding migrations
+=================
+
+* Add-Migration <<MIGRATION_NAME>> -Context FeedbackDbContext -OutputDir Data/Migrations/FeedbackDb
+
+* Update-Database

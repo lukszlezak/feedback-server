@@ -1,0 +1,29 @@
+﻿	Startup.cs
+	
+public void ConfigureServices(IServiceCollection services) {
+	services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+		or
+	services.AddHttpContextAccessor();
+	services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+}
+
+public void Configure(IApplicationBuilder app, IHostingEnvironment env) {
+	app.UseHttpsRedirection();
+}
+
+
+
+	FeedbackAPIController.cs
+
+private readonly IHttpContextAccessor forIP;
+
+public FeedbackAPIController(IHttpContextAccessor forIP)
+{
+    this.forIP = forIP;
+}
+
+public submit() {
+	var ip = Request.HttpContext.Connection.RemoteIpAddress.ToString();
+	var ip = this.forIP.HttpContext.Connection.RemoteIpAddress.ToString();
+	return Ok("message: " + feedback.Message + " apiKey: " + apiKey + " host: " + Request.Host.Host + " IP: " + ip);
+}

@@ -1,0 +1,19 @@
+﻿@model DomainAddViewModel
+@{
+    ViewData["Title"] = "Add Domain";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Add domain</h1>
+
+<form method="post" asp-controller="Domain" asp-action="Add" class="mt-5">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label class="control-label">Domain name</label>
+        <input asp-for="Name" class="form-control" required autofocus />
+        <span asp-validation-for="Name" class="text-danger"></span><br />
+        <label class="control-label">Description</label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Add Domain</button>
+</form>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gmtl.Feedback.Server", "Gmtl.Feedback.Server\Gmtl.Feedback.Server.csproj", "{8DDF9930-622C-4C67-9270-BD1FDC27C0E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AD353D2-9297-4814-B8F0-D2E298B714D9}"
+	ProjectSection(SolutionItems) = preProject
+		GmtlRules.ruleset = GmtlRules.ruleset
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gmtl.Feedback.Server.Tests", "Gmtl.Feedback.Server.Tests\Gmtl.Feedback.Server.Tests.csproj", "{2045DDDF-EA44-424E-A26B-B9B31FD2E61B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DDF9930-622C-4C67-9270-BD1FDC27C0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDF9930-622C-4C67-9270-BD1FDC27C0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDF9930-622C-4C67-9270-BD1FDC27C0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDF9930-622C-4C67-9270-BD1FDC27C0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2045DDDF-EA44-424E-A26B-B9B31FD2E61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2045DDDF-EA44-424E-A26B-B9B31FD2E61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2045DDDF-EA44-424E-A26B-B9B31FD2E61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2045DDDF-EA44-424E-A26B-B9B31FD2E61B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FF782F5-8B83-47CA-913C-BE2EE66E4F89}
+	EndGlobalSection
+EndGlobal
